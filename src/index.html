@@ -1,0 +1,21 @@
+<!--  TODO : VSCode에서 폴더 "CefSharpWebApp" 열어서 -> index.html 파일 생성 및 WAS 아파치 톰캣 연결 및 배포(Run on Sever) 작업 처리 (2024.09.27 jbh)  -->
+<!--  참고 URL - https://moneygear.tistory.com/15  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function test() {
+            await CefSharp.BindObjectAsync("boundAsync"); // 자바스크립트 코드로 객체 "CefSharp" 바인딩 처리
+    
+            boundAsync.Test(999, "babo");
+        }
+    </script>
+    
+    <input id="callcs" type="button" value="click" onclick="test();" />
+</body>
+</html>
